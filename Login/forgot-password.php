@@ -17,7 +17,7 @@ if (isset($_POST["resetPassword"])) {
       $data = mysqli_fetch_assoc($check_email);
       
       $to = $email;
-      $subject = "Reset Password - Pure Coding YouTube";
+      $subject = "Reset Password";
     
       $message = "
       <html>
@@ -58,7 +58,7 @@ if (isset($_POST["resetPassword"])) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <title>Sign in & Sign up Form - Pure Coding</title>
+  <title>Sign in & Sign up Form</title>
 </head>
 
 <body>
@@ -66,7 +66,7 @@ if (isset($_POST["resetPassword"])) {
     <div class="forms-container">
       <div class="signin-signup">
         <form action="" method="post" class="sign-in-form">
-          <h2 class="title">Reset Password</h2>
+          <h2 class="title">Lấy lại mật khẩu</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Email Address" name="email" value="<?php echo $_POST['email']; ?>" required />
@@ -79,10 +79,9 @@ if (isset($_POST["resetPassword"])) {
     <div class="panels-container">
       <div class="panel left-panel">
         <div class="content">
-          <h3>Forgot Password ?</h3>
+          <h3>Quên mật khẩu ?</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-            ex ratione. Aliquid!
+            Quên mật khẩu hãy đăng kí lại nào !
           </p>
         </div>
         <img src="img/log.svg" class="image" alt="" />

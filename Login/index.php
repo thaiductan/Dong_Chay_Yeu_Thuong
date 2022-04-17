@@ -62,7 +62,7 @@ if (isset($_POST["signup"])) {
         echo "<script>alert('Mail not sent. Please try again.');</script>";
       }
     } else {
-      echo "<script>alert('User registration failed.');</script>";
+      echo "<script>alert('Đăng kí thất bại, bạn hãy đăng kí lại');</script>";
     }
   }
 }
@@ -91,13 +91,14 @@ if (isset($_POST["signin"])) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <title>Sign in & Sign up Form - Pure Coding</title>
+  <title>Đăng nhập - Đăng kí</title>
 </head>
 
 <body>
   <div class="container">
     <div class="forms-container">
       <div class="signin-signup">
+        
 
         <!-- Form đăng nhập -->
         <form action="" method="post" class="sign-in-form">
@@ -111,9 +112,10 @@ if (isset($_POST["signin"])) {
             <input type="password" placeholder="Mật khẩu" name="password" value="<?php echo $_POST['password']; ?>" required />
           </div>
           <input type="submit" value="Tiếp tục" name="signin" class="btn solid" />
-          <p style="display: flex;justify-content: center;align-items: center;margin-top: 20px;"><a href="forgot-password.php" style="color: #4590ef;">Forgot Password?</a></p>
+          <p style="display: flex;justify-content: center;align-items: center;margin-top: 20px;"><a href="forgot-password.php" style="color: #ff6767;">Quên mật khẩu?</a></p>
         </form>
-
+        
+        
         <!-- Form đăng kí -->
         <form action="" class="sign-up-form" method="post">
           <h2 class="title">Đăng kí</h2>
@@ -137,6 +139,7 @@ if (isset($_POST["signin"])) {
         </form>
       </div>
     </div>
+
 
     <!-- Giao diện welcome -->
     <div class="panels-container">
