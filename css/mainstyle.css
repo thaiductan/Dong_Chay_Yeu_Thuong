@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;900&display=swap');
+
+:root{
+    --main-text-font:'Be Vietnam Pro', sans-serif;
+    --red: #EA140B;
+    --orange:#FD7238;
+    --red-low: #ee6863 ;
+    --green: #36ff04 ;
+    --white: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-text-font);
+
+}
+
+li{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--red);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 40px;
+    height: 70px;
+    align-items: center;
+
+}
+
+.logo{
+    flex: 1;
+    size: 150%;
+
+}
+
+.menu{
+    flex: 3;
+    display: flex;
+    padding: 20px 0;
+    margin-left: 80px;
+}
+
+.menu > li{
+    padding:0 23px;
+    position: relative;
+    font-weight: medium;
+    font-weight: 550;
+    align-items: center;
+}
+
+.menu > li a{
+    font-size: 16px;
+    font-weight: inherit;
+}
+
+.menu > li i{
+    size: 30px 30px;
+}
+
+
+
+.others{
+    flex: 1;
+    display:  flex;
+    padding: 0 12px;
+}
+
+.others > li {
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.others > li:first-child {
+    position: static;
+    right: 0;
+}
+
+.others > li:first-child input{
+    width: 100%;
+    position: static;
+    right: 10px;
+}
+
+.others > li:first-child i{
+    position: absolute;
+    right: 15px;
+}
+
+/*----------------------- INFORMATION --------------------- */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.information{
+    padding: 20px 0 0;
+}
+
+.information-top{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.information-top p{
+    font-family: var(--main-text-font);
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+
+.information-left{
+    width: 20%;
+    margin-left: 40px;
+}
+
+.information-right{
+    width: 75%;
+}
+
+.information-right-top-item:first-child{
+    flex: 2;
+    font-size: 16px ;
+    font-family: var(--main-text-font);
+    font-weight: medium;
+    font-weight: 600;
+}
+
+.informaton-right-top-item{
+    flex: 1;
+    padding: 0 20px;
+    align-items: center;
+}
+
+
+.informaton-right-top-item p{
+    align-items: center;
+    font-weight: bold;
+}
+
+.informaton-right-top-item button{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.informaton-right-top-item select{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.information-left ul li{
+    padding:12px 0;
+
+}
+
+.information-left ul li > a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+
+
+.information-left ul li ul li{
+    padding-left: 10px;
+    
+}
+
+.information-left-li ul{
+    display:  none;
+}
+
+.information-left-li.block ul{
+    display: block;
+}
+
+.information-left ul li ul li a{
+    color: #333;
+    font-size: 12px;
+}
+
+/*----------------------- DETAILS INFORMATION ----------------- */
+
+.details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    min-height: 530px;
+    background: rgb(245, 245, 245);
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.details-information{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.details table{
+    width:  100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td{
+    font-weight: 600;
+}
+
+.details .details-information table tr{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.details .details-information table tr:last-child{
+    border-bottom: none;
+}
+
+.details .details-information table tbody tr:hover{
+    background: var(--white);
+    color: #000000;
+}
+
+.details .details-information table tr td{
+    padding: 9px 5px;
+}
+
+.details .details-information table thead tr td:last-child,
+.details .details-information table tbody tr td:last-child{
+    text-align: right;
+}
+
+.details .details-information table thead tr td:nth-child(2),
+.details .details-information table tbody tr td:nth-child(2){
+    text-align: left;
+    padding-right: 20px ;
+}
+
+.details .details-information table thead tr td:nth-child(3),
+.details .details-information table tbody tr td:nth-child(3){
+    text-align: center;
+}
+
+.details .details-information table thead tr td:nth-child(4),
+.details .details-information table tbody tr td:nth-child(4){
+    text-align: center;
+}
+
+.status{
+    position: relative;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+}
+
+.ready{
+    background: var(--green) ;
+    color: black;
+}
+
+.none{
+    background: var(--orange);
+    color: black;
+}
+
+
+/*--------------------------  PERSONAL --------------------------*/
+
+.personal{
+    padding:30px 0;
+
+}
+
+.personal-top{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.personal-top p{
+    font-family: var(--main-text-font);
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.personal-content-left{
+    width: 40%;
+    padding-left: 20px;
+}
+
+.personal-content-right{
+    width: 50%;
+
+}
+
+.personal-content-left-img{
+    width: 90%;
+    margin-right: 25px;
+}
+
+.personal-content-right{
+    width: 60%;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.personal-content-right-name h1{
+    font-family: var(--main-text-font);
+    font-size: 40px;
+    color: var(--red);
+}
+
+.personal-content-right-name p{
+    font-size: 16px;
+
+}
+
+.personal-content-right-gender{
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.personal-content-right-gender i{
+    color: var(--red-low);
+}
+
+.personal-content-right-date{
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.personal-content-right-date i{
+    color: var(--red-low);
+}
+
+.personal-content-right-number{
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.personal-content-right-number i{
+    color: var(--red-low);
+}
+
+
+.personal-content-right-address{
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.personal-content-right-address i{
+    color: var(--red-low);
+}
+
+.personal-content-right-bloodgroup{
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.personal-content-right-bloodgroup i{
+    color: var(--red-low);
+}
+
+.personal-content-right-donation-count{
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.personal-content-right-donation-count i{
+    color: var(--red-low);
+}
+
+
+.personal-content-right-donation-time-donation{
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.personal-content-right-donation-time-donation i{
+    color: var(--red-low);
+}
+
+.personal-content-right-donation-status{
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.personal-content-right-donation-status i{
+    color: var(--red-low);
+}
