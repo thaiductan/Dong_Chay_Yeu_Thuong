@@ -4,7 +4,7 @@ include "database.php";
 
 <?php
 
-class information{
+class personal{
     private $db;
 
     public function __construct()
@@ -13,8 +13,8 @@ class information{
 
     }
 
-    public function insert_information($information_name){
-        $query = "INSERT INTO tbl_information(information_name) VALUES ('$information_name')"   ;
+    public function insert_personal($information_id, $personal_name){
+        $query = "INSERT INTO tbl_personal(information_id, personal_name) VALUES ('$information_id', '$personal_name')"   ;
         $result = $this -> db -> insert($query);
         return $result;
     }
@@ -45,6 +45,8 @@ class information{
         header('Location: information_show.php');
         return $result;
     }
+
+
 
 }
 

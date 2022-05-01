@@ -53,8 +53,8 @@ header{
 .menu > li{
     padding:0 23px;
     position: relative;
-    font-weight: medium;
-    font-weight: 550;
+
+    font-weight: 400;
     align-items: center;
 }
 
@@ -244,6 +244,8 @@ header{
     padding: 9px 5px;
 }
 
+
+
 .details .details-information table thead tr td:last-child,
 .details .details-information table tbody tr td:last-child{
     text-align: right;
@@ -410,3 +412,157 @@ header{
 .personal-content-right-donation-status i{
     color: var(--red-low);
 }
+
+
+/*-------------------- NEWS ------------------------*/
+
+.news{
+    padding: 20px 0 0;
+}
+
+.news-content-left p{
+    font-family: var(--main-text-font);
+    margin: 0 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.news-content-left span{
+    font-family: var(--main-text-font);
+    margin: 0 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.news-content-left{
+
+    margin-left: 40px;
+}
+
+.news-content-left img{
+    max-width:800px;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+.news-content-right{
+    width: 30%;
+}
+
+
+.home{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.home-img{
+	width: 100%;
+
+}
+
+.list{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+
+/* ------------------- Address ---------------------*/
+.cardBox{
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+}
+
+.cardBox .card{
+    position:relative;
+    background: rgb(255, 87, 87);
+    padding: 20px;
+    display: flex;
+    justify-content:  space-between;
+    cursor: pointer;
+    margin-left: 45px;
+    margin-bottom: 45px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardBox .card .header{
+    color: #ffffff;
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.cardBox .card .phone-num{
+    margin-top: 10px;
+    color:rgb(255, 255, 255);
+}
+
+.cardBox .card .address{
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.cardBox .card .address{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.information header{
+    font-size: 25px;
+    margin-left: 260px;
+    font-weight: bolder;
+    color: #EA140B;
+
+}
+
+.information .cardBox {
+    margin-top: 15x;
+}
+
+
+
+.leaderboard-top{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+
+.leaderboard-top p{
+    font-family: var(--main-text-font);
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.leaderboard header{
+    font-size: 25px;
+    margin-left: 400px;
+    font-weight: bolder;
+    color: #EA140B;
+}
+
+.leaderboard .content-list .leaderboard-list{
+
+    margin-left: 20px;
+    margin-right: 20px  ;
+    background: rgb(201, 201, 201);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+

@@ -8,17 +8,17 @@
                     </ul>
                 </li>
 
-                <li><a href="#">Loại sản phẩm</a>
+                <li><a href="#">Bảng tin</a>
                     <ul>
-                        <li><a href="">Thêm loại sản phẩm</a></li>
-                        <li><a href="">Danh sách loại sản phẩm</a></li>
+                        <li><a href="">Thêm Bài viết</a></li>
+                        <li><a href="">Quản lý bài viết</a></li>
                     </ul>
                 </li>
 
-                <li><a href="#">Sản phẩm</a>
+                <li><a href="#">Nhóm máu</a>
                     <ul>
-                        <li><a href="">Thêm sản phẩm</a></li>
-                        <li><a href="">danh sách sản phẩm</a></li>
+                        <li><a href="">Thêm nhóm máu</a></li>
+                        <li><a href="">Quản lý nhóm máu</a></li>
                     </ul>
                 </li>
                 
